@@ -1,0 +1,2560 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kripansh Kavach - देश के रक्षक, देश के सेवक</title>
+    <meta name="description" content="Kripansh Kavach - Premium Indian-made defense equipment including tactical holsters and ammo boxes. Made in India, trusted by Indian forces.">
+    <meta name="keywords" content="defense equipment, tactical holsters, ammo boxes, made in india, indian army, police equipment">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        /* Base Styles */
+        :root {
+            /* Primary Theme Colors */
+            --primary-color: #007bff;
+            --primary-dark: #0056b3;
+            --primary-light: #5bc0de;
+            
+            /* Secondary Theme Colors */
+            --secondary-color: #004d99;
+            --secondary-dark: #003d73;
+            --secondary-light: #3366cc;
+            
+            /* Accent Colors */
+            --accent-color: #ff6b6b;
+            --accent-dark: #ff4d4d;
+            --accent-light: #ff8585;
+            
+            /* Neutral Colors */
+            --text-color: #333;
+            --text-light: #666;
+            --text-dark: #1a1a1a;
+            --light-bg: rgba(255, 255, 255, 0.95);
+            --dark-bg: rgba(24, 24, 24, 0.95);
+            
+            /* Gradient Colors */
+            --gradient-primary: linear-gradient(135deg, var(--primary-color), var(--primary-dark));
+            --gradient-secondary: linear-gradient(135deg, var(--secondary-color), var(--secondary-dark));
+            --gradient-accent: linear-gradient(135deg, var(--accent-color), var(--accent-dark));
+            
+            /* Theme Variables */
+            --theme-primary: var(--primary-color);
+            --theme-secondary: var(--secondary-color);
+            --theme-accent: var(--accent-color);
+            --theme-text: var(--text-color);
+            --theme-bg: var(--light-bg);
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            line-height: 1.6;
+            color: var(--theme-text);
+            background: var(--theme-bg);
+        }
+        
+        /* Section Headers */
+        .section-header {
+            margin-bottom: 4rem;
+            text-align: center;
+        }
+        .section-header h2 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--theme-secondary);
+            margin-bottom: 1rem;
+            position: relative;
+            display: inline-block;
+        }
+        .section-header h2::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: var(--gradient-primary);
+            background-size: 200% 200%;
+            background-position: 0% 50%;
+            transition: 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .section-header h2:hover::after {
+            background-position: 100% 50%;
+        }
+        .section-header p {
+            font-size: 1.25rem;
+            color: var(--theme-text);
+            opacity: 0.8;
+        }
+
+        /* Navigation Styles */
+        .navbar {
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            padding: 18px 0;
+            background: var(--theme-bg);
+            position: fixed;
+            width: 100%;
+            z-index: 1000;
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+            will-change: transform, opacity;
+            background-clip: padding-box;
+            background: var(--gradient-secondary);
+            background-clip: padding-box;
+        }
+        .navbar-brand {
+            font-weight: 700;
+            font-size: 1.3rem;
+            text-transform: uppercase;
+            letter-spacing: 1.2px;
+            display: flex;
+            align-items: center;
+            gap: 1.2rem;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            position: relative;
+            will-change: transform;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+        }
+        .navbar-brand img {
+            filter: brightness(0) invert(1);
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            width: 45px;
+            height: 45px;
+            object-fit: contain;
+            position: relative;
+            z-index: 1;
+            will-change: transform, filter;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+        .navbar-brand:hover img {
+            transform: scale(1.05) rotate(2deg);
+            filter: brightness(0.95) invert(1);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        }
+        .navbar-brand::after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: var(--gradient-primary);
+            background-size: 200% 200%;
+            background-position: 0% 50%;
+            left: -100%;
+            top: 0;
+            transition: 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+            z-index: 0;
+            will-change: transform;
+        }
+        .navbar-brand:hover::after {
+            left: 100%;
+            background-position: 100% 50%;
+        }
+        
+        /* Navbar Container */
+        .navbar-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 1rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        /* Navbar Collapsible */
+        .navbar-collapse {
+            background: var(--light-bg);
+            padding: 1.2rem;
+            border-radius: 12px;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+            position: absolute;
+            top: 100%;
+            left: 0;
+            right: 0;
+            margin-top: 25px;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            will-change: max-height;
+            backdrop-filter: blur(8px);
+            -webkit-backdrop-filter: blur(8px);
+        }
+        .navbar-collapse.show {
+            max-height: 600px;
+            transition: max-height 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        
+        /* Navbar Toggle Button */
+        .navbar-toggler {
+            border: none;
+            padding: 0.6rem;
+            background: transparent;
+            position: relative;
+            z-index: 1001;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            will-change: transform;
+        }
+        .navbar-toggler:hover {
+            transform: rotate(10deg);
+            background: rgba(0, 123, 255, 0.1);
+            border-radius: 50%;
+        }
+        .navbar-toggler-icon {
+            width: 24px;
+            height: 24px;
+            background-size: 24px 24px;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            will-change: transform;
+        }
+        .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
+            background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'><path stroke='var(--primary-color)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M15 15L22 22M15 15L8 22M15 15L22 8M15 15L8 8'/></svg>");
+        }
+        
+        /* Navigation Links */
+        .nav-link {
+            font-weight: 500;
+            padding: 0.6rem 1.2rem;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            position: relative;
+            color: var(--theme-text);
+            text-transform: uppercase;
+            letter-spacing: 0.6px;
+            opacity: 0.8;
+            position: relative;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            overflow: hidden;
+            will-change: transform, opacity;
+        }
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: 0;
+            left: 0;
+            background: var(--gradient-primary);
+            transition: width 0.3s cubic-bezier(0.4, 0, 0.2, 1), background 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            will-change: width, background;
+        }
+        .nav-link:hover::after,
+        .nav-link.active::after {
+            width: 100%;
+            background: var(--gradient-secondary);
+        }
+        .nav-link:hover,
+        .nav-link.active {
+            color: var(--theme-secondary);
+            opacity: 1;
+            font-weight: 550;
+        }
+        
+        /* Link Hover Effects */
+        .nav-link::before {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: var(--gradient-accent);
+            left: -100%;
+            top: 0;
+            transition: 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+            z-index: 0;
+            will-change: transform;
+        }
+        .nav-link:hover::before {
+            left: 100%;
+        }
+        
+        /* Link Icons */
+        .nav-link i {
+            font-size: 1.2rem;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            opacity: 0.7;
+            position: relative;
+            z-index: 1;
+            color: var(--theme-primary);
+        }
+        .nav-link:hover i {
+            transform: scale(1.1) rotate(2deg);
+            opacity: 1;
+            color: var(--theme-secondary);
+        }
+        
+        /* Active State */
+        .nav-link.active {
+            color: var(--theme-secondary);
+            opacity: 1;
+            font-weight: 550;
+        }
+        .nav-link.active::after {
+            width: 100%;
+            background: var(--gradient-secondary);
+        }
+        
+        /* Link Text Effects */
+        .nav-link span {
+            position: relative;
+            z-index: 1;
+            will-change: transform;
+        }
+        .nav-link:hover span::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 1px;
+            bottom: -2px;
+            left: 0;
+            background: var(--theme-accent);
+            transition: width 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            will-change: width;
+        }
+        .nav-link:hover span::after {
+            width: 100%;
+        }
+        
+        /* Link Hover Effects */
+        .nav-link::before {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(0,123,255,0.1), transparent);
+            left: -100%;
+            top: 0;
+            transition: 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+            z-index: 0;
+            will-change: transform;
+        }
+        .nav-link:hover::before {
+            left: 100%;
+        }
+        
+        /* Link Icons */
+        .nav-link i {
+            font-size: 1.2rem;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            opacity: 0.7;
+            position: relative;
+            z-index: 1;
+            will-change: transform, opacity;
+        }
+        .nav-link:hover i {
+            transform: scale(1.1) rotate(2deg);
+            opacity: 1;
+        }
+        
+        /* Active State */
+        .nav-link.active {
+            color: var(--secondary-color);
+            opacity: 1;
+            font-weight: 550;
+        }
+        .nav-link.active::after {
+            width: 100%;
+            background: linear-gradient(90deg, var(--secondary-color), var(--primary-color));
+        }
+        
+        /* Link Text Effects */
+        .nav-link span {
+            position: relative;
+            z-index: 1;
+            will-change: transform;
+        }
+        .nav-link:hover span::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 1px;
+            bottom: -2px;
+            left: 0;
+            background: var(--primary-color);
+            transition: width 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            will-change: width;
+        }
+        .nav-link:hover span::after {
+            width: 100%;
+        }
+        
+        /* Mobile Menu Toggle */
+        .navbar-toggler {
+            border: none;
+            padding: 0.6rem;
+            background: transparent;
+            position: relative;
+            z-index: 1001;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            will-change: transform;
+        }
+        .navbar-toggler:hover {
+            transform: rotate(10deg);
+            background: var(--gradient-accent);
+            border-radius: 50%;
+        }
+        .navbar-toggler-icon {
+            width: 24px;
+            height: 24px;
+            background-size: 24px 24px;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            will-change: transform;
+            stroke: var(--theme-primary);
+        }
+        .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
+            background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'><path stroke='var(--theme-secondary)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M15 15L22 22M15 15L8 22M15 15L22 8M15 15L8 8'/></svg>");
+        }
+        
+        /* Mobile Menu */
+        .navbar-collapse {
+            background: var(--theme-bg);
+            padding: 1.2rem;
+            border-radius: 12px;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+            position: absolute;
+            top: 100%;
+            left: 0;
+            right: 0;
+            margin-top: 25px;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            will-change: max-height;
+            backdrop-filter: blur(8px);
+            -webkit-backdrop-filter: blur(8px);
+            background: var(--gradient-secondary);
+        }
+        .navbar-collapse.show {
+            max-height: 600px;
+            transition: max-height 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .navbar-nav {
+            display: flex;
+            flex-direction: column;
+            gap: 1.2rem;
+            will-change: transform;
+        }
+        .nav-item {
+            width: 100%;
+            will-change: transform;
+        }
+        
+        /* Mobile Menu */
+        .navbar-collapse {
+            background: var(--light-bg);
+            padding: 1.2rem;
+            border-radius: 12px;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+            position: absolute;
+            top: 100%;
+            left: 0;
+            right: 0;
+            margin-top: 25px;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            will-change: max-height;
+        }
+        .navbar-collapse.show {
+            max-height: 600px;
+            transition: max-height 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .navbar-nav {
+            display: flex;
+            flex-direction: column;
+            gap: 1.2rem;
+            will-change: transform;
+        }
+        .nav-item {
+            width: 100%;
+            will-change: transform;
+        }
+        
+        /* Get Quote Button */
+        .btn-quote {
+            padding: 0.6rem 1.8rem;
+            font-weight: 500;
+            border-radius: 25px;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            gap: 0.6rem;
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            border: none;
+            color: white;
+            text-transform: uppercase;
+            letter-spacing: 1.2px;
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0, 86, 179, 0.1);
+        }
+        .btn-quote::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+            transition: 0.5s;
+        }
+        .btn-quote:hover::before {
+            left: 100%;
+        }
+        .btn-quote:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(0, 86, 179, 0.2);
+            background: linear-gradient(135deg, var(--secondary-color), var(--primary-color));
+        }
+        .btn-quote i {
+            font-size: 1.3rem;
+            transition: transform 0.3s ease;
+            position: relative;
+        }
+        .btn-quote:hover i {
+            transform: translateX(3px) scale(1.1);
+        }
+        
+        /* Navbar Scroll Effects */
+        .navbar.scroll-down {
+            transform: translateY(-100%);
+        }
+        .navbar.scroll-up {
+            transform: translateY(0);
+        }
+        
+        /* Mobile Menu */
+        .navbar-toggler {
+            border: none;
+            padding: 0.6rem;
+            background: transparent;
+            position: relative;
+            z-index: 1001;
+            transition: transform 0.3s ease;
+        }
+        .navbar-toggler:hover {
+            transform: rotate(10deg);
+        }
+        .navbar-toggler-icon {
+            background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'><path stroke='var(--primary-color)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/></svg>");
+            transition: transform 0.3s ease;
+        }
+        .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
+            transform: rotate(90deg);
+        }
+        
+        /* Mobile Menu Styles */
+        .navbar-collapse {
+            background: var(--light-bg);
+            padding: 1.2rem;
+            border-radius: 12px;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+            position: absolute;
+            top: 100%;
+            left: 0;
+            right: 0;
+            margin-top: 25px;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-out;
+        }
+        .navbar-collapse.show {
+            max-height: 600px;
+            transition: max-height 0.3s ease-in;
+        }
+        .navbar-nav {
+            display: flex;
+            flex-direction: column;
+            gap: 1.2rem;
+        }
+        .nav-item {
+            width: 100%;
+        }
+        .nav-link {
+            padding: 0.8rem 1.2rem;
+            border-radius: 10px;
+            position: relative;
+            overflow: hidden;
+            font-size: 0.95rem;
+        }
+        .nav-link::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(0,123,255,0.15), transparent);
+            transition: 0.5s;
+        }
+        .nav-link:hover::before {
+            left: 100%;
+        }
+        .nav-link:hover {
+            background: rgba(0, 123, 255, 0.15);
+        }
+        
+        /* Technical Specifications Styles */
+        .tech-list {
+            line-height: 1.8;
+        }
+        .tech-list li {
+            padding: 8px 0;
+        }
+        .tech-list i {
+            font-size: 1.1rem;
+        }
+
+        /* Manufacturing Process Styles */
+        .manufacturing-steps {
+            padding: 20px;
+            background: var(--light-bg);
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .step-item {
+            display: flex;
+            align-items: flex-start;
+            padding: 15px 0;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+        }
+        .step-item:last-child {
+            border-bottom: none;
+        }
+        .step-number {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background: var(--primary-color);
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            margin-right: 15px;
+        }
+        .step-content h4 {
+            margin-bottom: 5px;
+            color: var(--text-color);
+        }
+        .manufacturing-facilities {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        .facility-item {
+            display: flex;
+            align-items: flex-start;
+            padding: 15px;
+            background: var(--light-bg);
+            border-radius: 8px;
+            transition: transform 0.3s ease;
+        }
+        .facility-item:hover {
+            transform: translateY(-5px);
+        }
+        .facility-icon {
+            width: 40px;
+            height: 40px;
+            border-radius: 8px;
+            background: var(--primary-color);
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 15px;
+        }
+        .facility-icon i {
+            font-size: 1.2rem;
+        }
+        .facility-content h4 {
+            margin-bottom: 5px;
+            color: var(--text-color);
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        /* Hero Section */
+        .hero-section {
+            background: linear-gradient(rgba(0,51,102,0.8), rgba(255,102,0,0.4)),
+                        url('assets/img/holsters/WhatsApp Image 2025-06-07 at 22.49.10 (6).jpeg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: white;
+            text-align: center;
+            padding: 12rem 0;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .hero-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(rgba(0,51,102,0.7), rgba(255,102,0,0.3));
+        }
+        
+        .hero-section .container {
+            position: relative;
+            z-index: 2;
+        }
+        
+        .hero-section h1 {
+            font-size: 4rem;
+            font-weight: 800;
+            margin-bottom: 2rem;
+            text-shadow: 3px 3px 8px rgba(0,0,0,0.6);
+            animation: fadeIn 1.5s ease-out;
+            letter-spacing: -1px;
+        }
+        
+        .hero-section p {
+            font-size: 2rem;
+            margin-bottom: 3rem;
+            text-shadow: 2px 2px 5px rgba(0,0,0,0.4);
+            animation: fadeIn 1.5s ease-out;
+            line-height: 1.5;
+        }
+        
+        /* Hero CTA Button */
+        .hero-section .cta-button {
+            display: inline-block;
+            padding: 1rem 2.5rem;
+            font-size: 1.25rem;
+            font-weight: 600;
+            background: linear-gradient(45deg, var(--primary-color), var(--accent-color));
+            color: white;
+            text-decoration: none;
+            border-radius: 30px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            animation: fadeIn 1.5s ease-out;
+        }
+        
+        .hero-section .cta-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+        }
+        
+        /* Manufacturing Process */
+        .manufacturing-process {
+            background: linear-gradient(rgba(0,51,102,0.8), rgba(255,102,0,0.8)),
+                        url('images/WhatsApp Image 2025-06-10 at 16.44.36.jpeg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            padding: 5rem 0;
+            position: relative;
+            overflow: hidden;
+            color: white;
+        }
+        
+        .manufacturing-process .container,
+        .manufacturing-process .process-step {
+            background: rgba(0,0,0,0.7);
+            backdrop-filter: blur(5px);
+            border-radius: 15px;
+            padding: 2rem;
+        }
+        
+        .process-step {
+            text-align: center;
+            padding: 2rem;
+            margin: 1rem;
+            border-radius: 10px;
+            background: white;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+        
+        .process-step:hover {
+            transform: translateY(-10px);
+        }
+        
+        /* Technical Specs */
+        .tech-specs {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 5rem 0;
+        }
+        
+        .tech-specs h3 {
+            color: white;
+        }
+        
+        .spec-item {
+            background: rgba(255,255,255,0.1);
+            padding: 1rem;
+            border-radius: 8px;
+            margin-bottom: 1rem;
+            transition: background-color 0.3s;
+        }
+        
+        .spec-item:hover {
+            background: rgba(255,255,255,0.2);
+        }
+        
+        /* Contact Form */
+        .contact-form {
+            background: white;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+        
+        .form-control:focus {
+            border-color: var(--accent-color);
+            box-shadow: 0 0 0 0.2rem rgba(255,102,0,0.25);
+        }
+        
+        /* Animations */
+        .animate-on-scroll {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: all 0.6s ease-out;
+        }
+        
+        .animate-on-scroll.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        
+        /* Navigation */
+        .navbar {
+            background-color: var(--primary-color) !important;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        
+        .navbar-brand {
+            font-weight: 700;
+            color: white !important;
+        }
+        
+        .nav-link {
+            color: white !important;
+            font-weight: 500;
+        }
+        
+        .nav-link:hover {
+            color: var(--accent-color) !important;
+        }
+        
+        /* Cards */
+        .product-card {
+            position: relative;
+            overflow: hidden;
+            transition: all 0.3s ease;
+            border: none;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            
+            /* Product Overlay */
+            .product-overlay {
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                background: rgba(0,0,0,0.7);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                opacity: 0;
+                transition: opacity 0.3s ease;
+            }
+            
+            .product-overlay:hover {
+                opacity: 1;
+            }
+            
+            .product-overlay .overlay-content {
+                text-align: center;
+                color: white;
+            }
+            
+            .product-overlay h3 {
+                font-size: 1.5rem;
+                margin-bottom: 1rem;
+            }
+            
+            .product-overlay p {
+                font-size: 1rem;
+                margin-bottom: 1.5rem;
+            }
+            
+            .product-overlay .cta-btn {
+                display: inline-block;
+                padding: 0.75rem 1.5rem;
+                background: var(--accent-color);
+                color: white;
+                text-decoration: none;
+                border-radius: 25px;
+                transition: transform 0.3s ease;
+            }
+            
+            .product-overlay .cta-btn:hover {
+                transform: translateY(-2px);
+            }
+            background: white;
+        }
+        
+        .product-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 12px rgba(0,0,0,0.15);
+        }
+        
+        .product-card .card-img-top {
+            border-radius: 10px 10px 0 0;
+            height: 250px;
+            object-fit: cover;
+        }
+        
+        /* Innovation Section */
+        .innovation-section {
+            background-color: white;
+            padding: 5rem 0;
+            position: relative;
+        }
+        
+        .innovation-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(135deg, rgba(0,51,102,0.05), rgba(255,102,0,0.05));
+        }
+        
+        /* Client Logos */
+        .client-logo {
+            filter: grayscale(100%);
+            transition: filter 0.3s ease;
+            max-height: 80px;
+        }
+        
+        .client-logo:hover {
+            filter: grayscale(0);
+        }
+        
+        /* Modal */
+        .modal-content {
+            border-radius: 15px;
+            box-shadow: 0 8px 24px rgba(0,0,0,0.2);
+        }
+        
+        .modal-header {
+            background-color: var(--primary-color);
+            color: white;
+            border-radius: 15px 15px 0 0;
+        }
+        
+        /* Footer */
+        .footer {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 4rem 0 2rem;
+        }
+        
+        .footer a {
+            color: white;
+            text-decoration: none;
+        }
+        
+        .footer a:hover {
+            color: var(--accent-color);
+        }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero-section h1 {
+                font-size: 2.5rem;
+            }
+            
+            .hero-section p {
+                font-size: 1.2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+        <div class="container-fluid">
+            <a class="navbar-brand d-flex align-items-center" href="#home">
+                <img src="assets/img/logo.png" alt="Kripansh Kavach Logo" height="40" class="me-2">
+                <span class="brand-text">Kripansh Kavach</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#products">Products</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#tech-specs">Technical Specs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#manufacturing">Manufacturing</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#case-studies">Case Studies</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+                <div class="ms-3">
+                    <a href="#quote" class="btn btn-quote" data-bs-toggle="modal" data-bs-target="#quoteModal">
+                        <i class="fas fa-file-invoice me-1"></i> Get Quote
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="container-fluid">
+            <div class="row align-items-center min-vh-100">
+                <div class="col-md-6">
+                    <div class="hero-content">
+                        <h1 class="display-3 fw-bold mb-4">Premium Defense Equipment</h1>
+                        <p class="lead mb-4">Made in India, Trusted by Indian Forces - Tactical Holsters & Ammo Boxes</p>
+                        <div class="hero-actions d-flex gap-3">
+                            <a href="#products" class="btn btn-primary btn-lg">
+                                <i class="fas fa-shopping-cart me-2"></i> Explore Products
+                            </a>
+                            <a href="#contact" class="btn btn-outline-primary btn-lg">
+                                <i class="fas fa-envelope me-2"></i> Contact Us
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="hero-image">
+                        <img src="assets/img/hero-product.png" alt="Premium Defense Equipment" class="img-fluid" style="max-height: 500px; object-fit: contain;">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section id="why-choose" class="py-5">
+        <div class="container">
+            <div class="section-header text-center mb-5">
+                <h2 class="display-4 fw-bold">Why Choose Kripansh Kavach</h2>
+                <p class="lead">Premium quality, made in India, trusted by Indian forces</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="feature-card text-center p-4" style="background: var(--theme-bg);">
+                        <div class="feature-icon mb-4" style="background: var(--gradient-primary); border-radius: 50%;">
+                            <i class="fas fa-shield-alt fa-3x text-white"></i>
+                        </div>
+                        <h3 class="h4 mb-3" style="color: var(--theme-secondary);">Made in India</h3>
+                        <p style="color: var(--theme-text); opacity: 0.8;">Premium quality products manufactured in India with pride</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="feature-card text-center p-4" style="background: var(--theme-bg);">
+                        <div class="feature-icon mb-4" style="background: var(--gradient-secondary); border-radius: 50%;">
+                            <i class="fas fa-star fa-3x text-white"></i>
+                        </div>
+                        <h3 class="h4 mb-3" style="color: var(--theme-secondary);">Premium Quality</h3>
+                        <p style="color: var(--theme-text); opacity: 0.8;">Engineered to meet the highest standards of excellence</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="feature-card text-center p-4" style="background: var(--theme-bg);">
+                        <div class="feature-icon mb-4" style="background: var(--gradient-accent); border-radius: 50%;">
+                            <i class="fas fa-users fa-3x text-white"></i>
+                        </div>
+                        <h3 class="h4 mb-3" style="color: var(--theme-secondary);">Trusted by Forces</h3>
+                        <p style="color: var(--theme-text); opacity: 0.8;">Used and trusted by Indian armed forces and police</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Add styles for new sections -->
+    <style>
+        /* Hero Section */
+        .hero-section {
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('assets/img/hero-bg.jpg');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            position: relative;
+            overflow: hidden;
+        }
+        .hero-content {
+            padding: 100px 0;
+            z-index: 2;
+        }
+        .hero-image {
+            position: relative;
+            z-index: 2;
+        }
+        .hero-image img {
+            animation: float 3s ease-in-out infinite;
+        }
+        @keyframes float {
+            0% { transform: translateY(0); }
+            50% { transform: translateY(-20px); }
+            100% { transform: translateY(0); }
+        }
+        
+        /* Feature Cards */
+        .feature-card {
+            text-align: center;
+            padding: 2rem;
+            background: var(--light-bg);
+            border-radius: 10px;
+            transition: transform 0.3s ease;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .feature-card:hover {
+            transform: translateY(-10px);
+        }
+        .feature-icon {
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+        }
+        
+        /* Product Filters */
+        .product-filters {
+            margin-bottom: 3rem;
+        }
+        .product-filters .btn {
+            margin: 0 0.5rem;
+            padding: 0.5rem 1.5rem;
+            border-radius: 25px;
+        }
+        .product-filters .btn.active,
+        .product-filters .btn:hover {
+            background-color: var(--primary-color);
+            border-color: var(--primary-color);
+            color: white;
+        }
+
+        /* Product Card */
+        .product-card {
+            transition: transform 0.3s ease;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .product-card:hover {
+            transform: translateY(-5px);
+        }
+        .product-image {
+            position: relative;
+            padding-top: 75%;
+            overflow: hidden;
+        }
+        .product-image img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+        .product-card:hover .product-image img {
+            transform: scale(1.05);
+        }
+        .product-overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: rgba(0, 0, 0, 0.8);
+            color: white;
+            padding: 1.5rem;
+            transform: translateY(100%);
+            transition: transform 0.3s ease;
+        }
+        .product-card:hover .product-overlay {
+            transform: translateY(0);
+        }
+        .product-actions {
+            display: flex;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+        .product-actions .btn {
+            padding: 0.5rem 1rem;
+            border-radius: 25px;
+        }
+
+        /* Product Info */
+        .product-info {
+            padding: 1.5rem;
+            background: white;
+        }
+        .product-info h5 {
+            margin-bottom: 0.5rem;
+        }
+        .product-info .text-muted {
+            font-size: 0.9rem;
+            color: #666;
+        }
+        .product-price {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+        .product-price .price {
+            font-weight: 600;
+            font-size: 1.25rem;
+            color: var(--primary-color);
+        }
+        .product-price .old-price {
+            text-decoration: line-through;
+            color: #999;
+        }
+
+        /* Product Modal */
+        .product-gallery {
+            margin-bottom: 2rem;
+        }
+        .product-gallery img {
+            border-radius: 10px;
+        }
+        .product-title {
+            margin-bottom: 1rem;
+            font-weight: 600;
+        }
+        .product-description {
+            margin-bottom: 1.5rem;
+            line-height: 1.6;
+        }
+        .product-features {
+            margin-bottom: 2rem;
+        }
+        .product-features ul {
+            list-style: none;
+            padding: 0;
+        }
+        .product-features li {
+            margin-bottom: 0.75rem;
+        }
+        .product-actions {
+            display: flex;
+            gap: 1rem;
+        }
+        .product-actions .btn {
+            padding: 0.75rem 1.5rem;
+            border-radius: 25px;
+        }
+
+        /* Buttons */
+        .btn-quote {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            border: none;
+            padding: 0.75rem 1.5rem;
+            border-radius: 25px;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+        .btn-quote:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0, 86, 179, 0.3);
+            background: linear-gradient(135deg, var(--secondary-color), var(--primary-color));
+        }
+        
+        /* Hero Actions */
+        .hero-actions {
+            margin-top: 2rem;
+        }
+        .hero-actions .btn {
+            padding: 0.75rem 1.5rem;
+            border-radius: 25px;
+            font-weight: 500;
+        }
+        .hero-actions .btn-primary {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            border: none;
+        }
+        .hero-actions .btn-primary:hover {
+            background: linear-gradient(135deg, var(--secondary-color), var(--primary-color));
+        }
+        .hero-actions .btn-outline-primary {
+            border: 2px solid white;
+        }
+        .hero-actions .btn-outline-primary:hover {
+            background: white;
+            color: var(--primary-color) !important;
+        }
+        
+        /* Hero Image */
+        .hero-image img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+        }
+    </style>
+                        <a class="nav-link" href="#tech-specs">Technical Specs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#manufacturing">Manufacturing</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#case-studies">Case Studies</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+                <div class="ms-3">
+                    <a href="#quote" class="btn btn-primary btn-quote" data-bs-toggle="modal" data-bs-target="#quoteModal">
+                        <i class="fas fa-file-invoice me-1"></i> Get Quote
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Add smooth scrolling behavior -->
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
+
+    <!-- Add styles for navbar -->
+    <style>
+        /* Navbar Base Styles */
+        .navbar {
+            transition: all 0.3s ease;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            padding: 15px 0;
+            background: rgba(255, 255, 255, 0.95);
+        }
+        .navbar-brand {
+            font-weight: 700;
+            font-size: 1.2rem;
+            text-transform: uppercase;
+        }
+        .navbar-brand img {
+            filter: brightness(0) invert(1);
+        }
+        
+        /* Navigation Links */
+        .nav-link {
+            font-weight: 500;
+            padding: 0.5rem 1rem;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: 0;
+            left: 0;
+            background-color: #0056b3;
+            transition: width 0.3s ease;
+        }
+        .nav-link:hover::after {
+            width: 100%;
+        }
+        
+        /* Get Quote Button */
+        .btn-quote {
+            padding: 0.5rem 1.5rem;
+            font-weight: 500;
+            border-radius: 25px;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        .btn-quote:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0, 86, 179, 0.2);
+        }
+        
+        /* Navbar Scroll Effects */
+        .navbar.scroll-down {
+            transform: translateY(-100%);
+        }
+        .navbar.scroll-up {
+            transform: translateY(0);
+        }
+        
+        /* Mobile Menu */
+        .navbar-toggler {
+            border: none;
+            padding: 0.5rem;
+        }
+        .navbar-toggler-icon {
+            background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'><path stroke='rgba(0,86,179,0.8)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/></svg>");
+        }
+    </style>
+
+    <!-- Add smooth scrolling behavior -->
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
+
+    <!-- Add navbar scroll effect -->
+    <script>
+        const nav = document.getElementById('mainNav');
+        let scrollPosition = 0;
+
+        window.addEventListener('scroll', () => {
+            const currentScroll = window.pageYOffset;
+
+            if (currentScroll <= 0) {
+                nav.classList.remove('scroll-up');
+                return;
+            }
+
+            if (currentScroll > scrollPosition && !nav.classList.contains('scroll-down')) {
+                nav.classList.remove('scroll-up');
+                nav.classList.add('scroll-down');
+            } else if (currentScroll < scrollPosition && nav.classList.contains('scroll-down')) {
+                nav.classList.remove('scroll-down');
+                nav.classList.add('scroll-up');
+            }
+            scrollPosition = currentScroll;
+        });
+    </script>
+                        <a class="nav-link" href="#gallery">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#manufacturing">Manufacturing</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#tech-specs">Tech Specs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link btn btn-primary btn-sm ms-2" href="#quote" data-bs-toggle="modal" data-bs-target="#quoteModal">Get Quote</a>
+                    </li>
+
+    <!-- Add smooth scrolling script -->
+    <script>
+        // Product filtering
+        document.querySelectorAll('.product-filters .btn').forEach(button => {
+            button.addEventListener('click', function() {
+                const filter = this.dataset.filter;
+                document.querySelectorAll('.product-filters .btn').forEach(btn => btn.classList.remove('active'));
+                this.classList.add('active');
+                
+                document.querySelectorAll('.product-item').forEach(item => {
+                    if (filter === 'all' || item.dataset.category === filter) {
+                        item.style.display = '';
+                    } else {
+                        item.style.display = 'none';
+                    }
+                });
+            });
+        });
+
+        // Add to cart functionality
+        function addToCart(product) {
+            // TODO: Implement cart functionality
+            alert(`Added ${product} to cart!`);
+        }
+
+        // Request quote functionality
+        function requestQuote() {
+            // TODO: Implement quote request
+            alert('Quote request modal will open here');
+        }
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Navbar scroll effect
+        const navbar = document.getElementById('mainNav');
+        let lastScroll = 0;
+        
+        window.addEventListener('scroll', () => {
+            const currentScroll = window.pageYOffset;
+            
+            if (currentScroll <= 0) {
+                navbar.classList.remove('scroll-up');
+                return;
+            }
+            
+            if (currentScroll > lastScroll && !navbar.classList.contains('scroll-down')) {
+                navbar.classList.remove('scroll-up');
+                navbar.classList.add('scroll-down');
+            } else if (currentScroll < lastScroll && navbar.classList.contains('scroll-down')) {
+                navbar.classList.remove('scroll-down');
+                navbar.classList.add('scroll-up');
+            }
+            lastScroll = currentScroll;
+        });
+    </script>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h1>Kripansh Kavach - देश के रक्षक, देश के सेवक</h1>
+                    <p class="lead">Premium Indian-made defense equipment trusted by Indian forces</p>
+                    <div class="d-flex gap-3">
+                        <a href="#products" class="btn btn-primary btn-lg">Explore Products</a>
+                        <a href="#video-showcase" class="btn btn-outline-light btn-lg">Watch Demo</a>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="video-placeholder rounded-3">
+                        <div class="video-overlay">
+                            <i class="fas fa-play fa-3x"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Video Showcase Section -->
+    <section id="video-showcase" class="py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="display-4 fw-bold text-primary">Product Showcase</h2>
+                <p class="lead text-secondary">Experience our products in action</p>
+            </div>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body text-center">
+                            <div class="video-thumbnail">
+                                <img src="assets/img/video-thumbnails/holsters.jpg" class="img-fluid rounded" alt="Holster Demo">
+                                <div class="video-overlay">
+                                    <i class="fas fa-play"></i>
+                                </div>
+                            </div>
+                            <h5 class="card-title mt-3">Tactical Holster Demo</h5>
+                            <p class="card-text">See how our tactical holsters perform in real-world scenarios</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body text-center">
+                            <div class="video-thumbnail">
+                                <img src="assets/img/video-thumbnails/ammo-boxes.jpg" class="img-fluid rounded" alt="Ammo Box Demo">
+                                <div class="video-overlay">
+                                    <i class="fas fa-play"></i>
+                                </div>
+                            </div>
+                            <h5 class="card-title mt-3">Ammo Box Testing</h5>
+                            <p class="card-text">Watch our ammo boxes withstand extreme conditions</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body text-center">
+                            <div class="video-thumbnail">
+                                <img src="assets/img/video-thumbnails/manufacturing.jpg" class="img-fluid rounded" alt="Manufacturing Process">
+                                <div class="video-overlay">
+                                    <i class="fas fa-play"></i>
+                                </div>
+                            </div>
+                            <h5 class="card-title mt-3">Manufacturing Process</h5>
+                            <p class="card-text">Explore our state-of-the-art manufacturing facilities</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="container my-5">
+        <div class="text-center mb-5">
+            <h2 class="display-4 fw-bold text-primary">Premium Defense Solutions</h2>
+            <p class="lead text-secondary">Engineered for excellence, Made in India</p>
+        </div>
+        
+        <!-- Product Categories -->
+        <div class="row mb-4">
+            <div class="col-12">
+                <div class="btn-group d-flex justify-content-center" role="group">
+                    <button type="button" class="btn btn-outline-primary active" data-category="all">All Products</button>
+                    <button type="button" class="btn btn-outline-primary" data-category="holsters">Holsters</button>
+                    <button type="button" class="btn btn-outline-primary" data-category="ammo-boxes">Ammo Boxes</button>
+                    <button type="button" class="btn btn-outline-primary" data-category="accessories">Accessories</button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Products Grid -->
+        <div class="row product-grid">
+            <div class="col-md-4 mb-4">
+                <div class="card product-card">
+                    <img src="assets/img/holsters/holster1.jpg" class="card-img-top" alt="Holster Model 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Premium Tactical Holster</h5>
+                        <p class="card-text">High-quality tactical holster designed for reliability and comfort.</p>
+                        <a href="#" class="btn btn-primary">Learn More</a>
+                    </div>
+                    <div class="product-overlay">
+                        <div class="overlay-content">
+                            <h3>Premium Tactical Holster</h3>
+                            <p>High-quality tactical holster designed for reliability and comfort.</p>
+                            <a href="#" class="cta-btn">View Details</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card product-card">
+                    <img src="assets/img/holsters/holster2.jpg" class="card-img-top" alt="Holster Model 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Stealth Holster</h5>
+                        <p class="card-text">Low-profile design with hammer lock system</p>
+                        <a href="#" class="btn btn-primary">Learn More</a>
+                    </div>
+                    <div class="product-overlay">
+                        <div class="overlay-content">
+                            <h3>Stealth Holster</h3>
+                            <p>Low-profile design with hammer lock system</p>
+                            <a href="#" class="cta-btn">View Details</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+            <div class="product-filters mb-4 text-center">
+                <button class="btn btn-outline-primary active" data-filter="all" style="background: var(--theme-bg); border-color: var(--theme-primary); color: var(--theme-primary);">
+                    <i class="fas fa-filter me-1"></i> All
+                </button>
+                <button class="btn btn-outline-primary" data-filter="holsters" style="background: var(--theme-bg); border-color: var(--theme-primary); color: var(--theme-primary);">
+                    <i class="fas fa-shield-alt me-1"></i> Holsters
+                </button>
+                <button class="btn btn-outline-primary" data-filter="ammo-boxes" style="background: var(--theme-bg); border-color: var(--theme-primary); color: var(--theme-primary);">
+                    <i class="fas fa-box me-1"></i> Ammo Boxes
+                </button>
+                <button class="btn btn-outline-primary" data-filter="accessories" style="background: var(--theme-bg); border-color: var(--theme-primary); color: var(--theme-primary);">
+                    <i class="fas fa-tools me-1"></i> Accessories
+                </button>
+            </div>
+                            <a href="#" class="cta-btn">View Details</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Image Gallery Section -->
+    <section id="gallery" class="py-5 bg-light">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="display-4 fw-bold text-primary">Interactive Gallery</h2>
+                <p class="lead text-secondary">Explore our premium defense equipment collection</p>
+            </div>
+            
+            <!-- Gallery Filters -->
+            <div class="row mb-4">
+                <div class="col-12">
+                    <div class="btn-group d-flex justify-content-center" role="group">
+                        <button type="button" class="btn btn-outline-primary active" data-filter="all">All</button>
+                        <button type="button" class="btn btn-outline-primary" data-filter="holsters">Holsters</button>
+                        <button type="button" class="btn btn-outline-primary" data-filter="ammo-boxes">Ammo Boxes</button>
+                        <button type="button" class="btn btn-outline-primary" data-filter="accessories">Accessories</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product Customization Builder -->
+            <div class="row mb-5">
+                <div class="col-12 text-center">
+                    <button class="btn btn-primary btn-lg" data-bs-toggle="modal" data-bs-target="#customizerModal">
+                        <i class="fas fa-paint-brush me-2"></i>Customize Your Product
+                    </button>
+                </div>
+            </div>
+
+            <!-- Customizer Modal -->
+            <div class="modal fade" id="customizerModal" tabindex="-1">
+                <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                        <div class="modal-header bg-primary text-white">
+                            <h5 class="modal-title mb-0">Product Customization</h5>
+                            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="product-preview">
+                                        <img src="assets/img/holsters/holster1.jpg" class="img-fluid rounded" alt="Product Preview">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <form id="customizerForm">
+                                        <div class="mb-3">
+                                            <label for="productType" class="form-label">Product Type</label>
+                                            <select class="form-select" id="productType" required>
+                                                <option value="">Select Product</option>
+                                                <option value="holster">Holster</option>
+                                                <option value="ammo-box">Ammo Box</option>
+                                                <option value="accessory">Accessory</option>
+                                            </select>
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="material" class="form-label">Material</label>
+                                            <select class="form-select" id="material" required>
+                                                <option value="">Select Material</option>
+                                                <option value="carbon">Carbon Polymer</option>
+                                                <option value="composite">Composite</option>
+                                                <option value="tactical">Tactical Polymer</option>
+                                            </select>
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="color" class="form-label">Color</label>
+                                            <div class="color-picker">
+                                                <input type="color" id="color" value="#000000">
+                                            </div>
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="features" class="form-label">Additional Features</label>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" id="feature1">
+                                                <label class="form-check-label" for="feature1">Retention System</label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" id="feature2">
+                                                <label class="form-check-label" for="feature2">Quick Release</label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" id="feature3">
+                                                <label class="form-check-label" for="feature3">RFID Enabled</label>
+                                            </div>
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="quantity" class="form-label">Quantity</label>
+                                            <input type="number" class="form-control" id="quantity" min="1" required>
+                                        </div>
+                                        <div class="d-grid">
+                                            <button type="submit" class="btn btn-primary">Request Custom Quote</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Gallery Grid -->
+            <div class="row gallery-grid g-4">
+                <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                    <div class="gallery-card">
+                        <div class="gallery-image">
+                            <img src="images/WhatsApp Image 2025-06-07 at 22.49.10 (1).jpeg" class="img-fluid" alt="Holster 2">
+                        </div>
+                        <div class="gallery-content">
+                            <h5 class="card-title">Holster 2</h5>
+                            <p class="card-text">Premium Indian-made defense equipment designed for durability and reliability</p>
+                            <div class="mt-3">
+                                <button class="btn btn-outline-primary btn-sm" 
+                                        data-bs-toggle="modal" 
+                                        data-bs-target="#quoteModal" 
+                                        data-product="Holster 2">
+                                    Get Quote
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Add more image cards as needed -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Mobile App Section -->
+    <section id="mobile-app" class="py-5 bg-light">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="display-4 fw-bold text-primary">Institutional Mobile App</h2>
+                <p class="lead text-secondary">Streamline your procurement process with our dedicated mobile application</p>
+            </div>
+            <div class="row align-items-center">
+                <div class="col-md-6 mb-4 mb-md-0">
+                    <div class="app-preview">
+                        <img src="assets/img/app-preview.png" class="img-fluid rounded" alt="Mobile App Preview">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="app-features">
+                        <div class="feature-item mb-4">
+                            <div class="feature-icon">
+                                <i class="fas fa-shopping-cart"></i>
+                            </div>
+                            <div class="feature-content">
+                                <h4>Quick Ordering</h4>
+                                <p>Place orders in seconds with our streamlined interface</p>
+                            </div>
+                        </div>
+                        <div class="feature-item mb-4">
+                            <div class="feature-icon">
+                                <i class="fas fa-chart-line"></i>
+                            </div>
+                            <div class="feature-content">
+                                <h4>Order Tracking</h4>
+                                <p>Real-time updates on your order status and delivery</p>
+                            </div>
+                        </div>
+                        <div class="feature-item mb-4">
+                            <div class="feature-icon">
+                                <i class="fas fa-file-invoice"></i>
+                            </div>
+                            <div class="feature-content">
+                                <h4>Invoice Management</h4>
+                                <p>Access and manage all your invoices digitally</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="fas fa-headset"></i>
+                            </div>
+                            <div class="feature-content">
+                                <h4>24/7 Support</h4>
+                                <p>Instant access to our customer support team</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-5">
+                <a href="#" class="btn btn-primary btn-lg me-3">
+                    <i class="fab fa-apple me-2"></i>Download on App Store
+                </a>
+                <a href="#" class="btn btn-outline-primary btn-lg">
+                    <i class="fab fa-google-play me-2"></i>Get on Google Play
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technical Specifications Section -->
+    <section id="tech-specs" class="py-5 bg-light">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="display-4 fw-bold text-primary">Technical Specifications</h2>
+                <p class="lead text-secondary">Engineering excellence in every detail</p>
+            </div>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body">
+                            <h4 class="card-title text-primary">Material Science</h4>
+                            <ul class="list-unstyled tech-list">
+                                <li><i class="fas fa-check text-primary me-2"></i>High-grade carbon polymers</li>
+                                <li><i class="fas fa-check text-primary me-2"></i>Weather-resistant coatings</li>
+                                <li><i class="fas fa-check text-primary me-2"></i>Impact-resistant construction</li>
+                                <li><i class="fas fa-check text-primary me-2"></i>Corrosion-proof materials</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body">
+                            <h4 class="card-title text-primary">Performance Metrics</h4>
+                            <ul class="list-unstyled tech-list">
+                                <li><i class="fas fa-check text-primary me-2"></i>Draw Time: 0.2-0.3 seconds</li>
+                                <li><i class="fas fa-check text-primary me-2"></i>Retention Level: 3-4 points</li>
+                                <li><i class="fas fa-check text-primary me-2"></i>Weight: 200-300g</li>
+                                <li><i class="fas fa-check text-primary me-2"></i>Temperature Range: -20°C to +60°C</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body">
+                            <h4 class="card-title text-primary">Durability Testing</h4>
+                            <ul class="list-unstyled tech-list">
+                                <li><i class="fas fa-check text-primary me-2"></i>10,000+ draw cycles</li>
+                                <li><i class="fas fa-check text-primary me-2"></i>Water resistance: IP67</li>
+                                <li><i class="fas fa-check text-primary me-2"></i>Impact resistance: 1000N</li>
+                                <li><i class="fas fa-check text-primary me-2"></i>UV resistance: 500 hours</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Manufacturing Process Section -->
+    <section id="manufacturing" class="py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="display-4 fw-bold text-primary">Precision Manufacturing</h2>
+                <p class="lead text-secondary">State-of-the-art facilities in India</p>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="manufacturing-steps">
+                        <div class="step-item mb-4">
+                            <div class="step-number">1</div>
+                            <div class="step-content">
+                                <h4>Design & Prototyping</h4>
+                                <p>Advanced CAD design and rapid prototyping using 3D printing technology</p>
+                            </div>
+                        </div>
+                        <div class="step-item mb-4">
+                            <div class="step-number">2</div>
+                            <div class="step-content">
+                                <h4>Material Preparation</h4>
+                                <p>High-grade polymers and metals processed using precision machinery</p>
+                            </div>
+                        </div>
+                        <div class="step-item mb-4">
+                            <div class="step-number">3</div>
+                            <div class="step-content">
+                                <h4>Quality Control</h4>
+                                <p>Multiple inspection points and durability testing at each stage</p>
+                            </div>
+                        </div>
+                        <div class="step-item">
+                            <div class="step-number">4</div>
+                            <div class="step-content">
+                                <h4>Final Assembly</h4>
+                                <p>Precision assembly and final quality inspection before delivery</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="manufacturing-facilities">
+                        <div class="facility-item mb-4">
+                            <div class="facility-icon">
+                                <i class="fas fa-industry"></i>
+                            </div>
+                            <div class="facility-content">
+                                <h4>State-of-the-Art Facilities</h4>
+                                <p>Modern manufacturing plant in India with advanced machinery</p>
+                            </div>
+                        </div>
+                        <div class="facility-item mb-4">
+                            <div class="facility-icon">
+                                <i class="fas fa-cogs"></i>
+                            </div>
+                            <div class="facility-content">
+                                <h4>Advanced Technology</h4>
+                                <p>Latest manufacturing technology and automation systems</p>
+                            </div>
+                        </div>
+                        <div class="facility-item mb-4">
+                            <div class="facility-icon">
+                                <i class="fas fa-users"></i>
+                            </div>
+                            <div class="facility-content">
+                                <h4>Skilled Workforce</h4>
+                                <p>Trained professionals with years of experience in defense manufacturing</p>
+                            </div>
+                        </div>
+                        <div class="facility-item">
+                            <div class="facility-icon">
+                                <i class="fas fa-truck"></i>
+                            </div>
+                            <div class="facility-content">
+                                <h4>Quality Assurance</h4>
+                                <p>Strict quality control processes and regular audits</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Case Studies Section -->
+    <section id="case-studies" class="py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="display-4 fw-bold text-primary">Success Stories</h2>
+                <p class="lead text-secondary">Real-world applications of our equipment</p>
+            </div>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">Indian Army Tactical Operations</h5>
+                            <p class="card-text">Our tactical holsters have been deployed in various operations, providing reliable performance in challenging environments.</p>
+                            <a href="#" class="btn btn-primary btn-sm">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">Custom Solution for Special Forces</h5>
+                            <p class="card-text">We developed a custom ammo box system for special forces units, meeting their specific requirements for durability and accessibility.</p>
+                            <a href="#" class="btn btn-primary btn-sm">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">Border Security Enhancement</h5>
+                            <p class="card-text">Our equipment has been instrumental in enhancing border security operations, providing reliable support to border forces.</p>
+                            <a href="#" class="btn btn-primary btn-sm">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer py-5" style="background: var(--gradient-secondary); color: white;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h4 style="color: var(--theme-primary); font-weight: 700;">Kripansh Kavach</h4>
+                    <p style="color: rgba(255, 255, 255, 0.8);">Premium Indian-made defense equipment trusted by Indian forces.</p>
+                    <div class="social-links" style="margin-top: 1.5rem;">
+                        <a href="#" class="text-white me-3" style="transition: color 0.3s ease;">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="text-white me-3" style="transition: color 0.3s ease;">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="text-white me-3" style="transition: color 0.3s ease;">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="text-white me-3" style="transition: color 0.3s ease;">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <h4 style="color: var(--theme-primary); font-weight: 700;">Quick Links</h4>
+                    <ul class="list-unstyled" style="margin-top: 1.5rem;">
+                        <li style="margin-bottom: 0.75rem;">
+                            <a href="#home" style="color: rgba(255, 255, 255, 0.8); text-decoration: none; transition: all 0.3s ease;">
+                                <i class="fas fa-home me-2"></i> Home
+                            </a>
+                        </li>
+                        <li style="margin-bottom: 0.75rem;">
+                            <a href="#products" style="color: rgba(255, 255, 255, 0.8); text-decoration: none; transition: all 0.3s ease;">
+                                <i class="fas fa-box me-2"></i> Products
+                            </a>
+                        </li>
+                        <li style="margin-bottom: 0.75rem;">
+                            <a href="#about" style="color: rgba(255, 255, 255, 0.8); text-decoration: none; transition: all 0.3s ease;">
+                                <i class="fas fa-info-circle me-2"></i> About Us
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#contact" style="color: rgba(255, 255, 255, 0.8); text-decoration: none; transition: all 0.3s ease;">
+                                <i class="fas fa-envelope me-2"></i> Contact
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h4 style="color: var(--theme-primary); font-weight: 700;">Contact Us</h4>
+                    <div style="margin-top: 1.5rem;">
+                        <div style="margin-bottom: 1rem;">
+                            <i class="fas fa-map-marker-alt me-2" style="color: var(--theme-accent);"></i>
+                            <span style="color: rgba(255, 255, 255, 0.8);">123 Defense Avenue, New Delhi, India</span>
+                        </div>
+                        <div style="margin-bottom: 1rem;">
+                            <i class="fas fa-phone me-2" style="color: var(--theme-accent);"></i>
+                            <span style="color: rgba(255, 255, 255, 0.8);">+91 1234567890</span>
+                        </div>
+                        <div>
+                            <i class="fas fa-envelope me-2" style="color: var(--theme-accent);"></i>
+                            <span style="color: rgba(255, 255, 255, 0.8);">info@kripanshkavach.com</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr style="margin: 2.5rem 0; border-color: rgba(255, 255, 255, 0.1);">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <p style="color: rgba(255, 255, 255, 0.6); margin-bottom: 0;">&copy; 2025 Kripansh Kavach. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Auto-fill product name in quote modal
+        document.querySelectorAll('[data-bs-target="#quoteModal"]').forEach(button => {
+            button.addEventListener('click', function() {
+                document.getElementById('productName').value = this.dataset.product;
+            });
+        });
+    </script>
+    <style>
+        .gallery-card {
+            transition: all 0.3s ease;
+            cursor: pointer;
+            border: 1px solid rgba(0,0,0,0.1);
+            background: #fff;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            height: 100%;
+            padding: 1rem;
+            position: relative;
+            overflow: visible;
+        }
+
+        .gallery-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(45deg, rgba(0,51,102,0.1), rgba(255,102,0,0.1));
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            z-index: 1;
+        }
+
+        .gallery-card:hover::before {
+            opacity: 1;
+        }
+
+        .gallery-card .gallery-image {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .gallery-card .gallery-image::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(to bottom, rgba(0,0,0,0.1), rgba(0,0,0,0.3));
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .gallery-card:hover .gallery-image::after {
+            opacity: 1;
+        }
+
+        .gallery-card .gallery-content {
+            position: relative;
+            z-index: 2;
+        }
+
+        .gallery-card .card-title {
+            position: relative;
+            z-index: 2;
+        }
+
+        .filters {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .filters .btn {
+            transition: all 0.3s ease;
+        }
+
+        .filters .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+
+        .filters .btn.active {
+            background-color: var(--primary-color);
+            border-color: var(--primary-color);
+            color: white;
+        }
+
+        @media (max-width: 768px) {
+            .gallery-card {
+                padding: 0.75rem;
+            }
+
+            .filters {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .filters .btn-group {
+                width: 100%;
+                max-width: 300px;
+            }
+
+            .filters .btn {
+                width: 100%;
+                margin-bottom: 0.5rem;
+            }
+        }
+
+        .gallery-card img.lazyload {
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .gallery-card img:not(.lazyload) {
+            opacity: 1;
+        }
+
+        #galleryLoading {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 200px;
+            margin-top: 2rem;
+        }
+
+        #galleryError {
+            margin-top: 2rem;
+            padding: 1rem;
+            border-radius: 10px;
+            background-color: #fff;
+            border: 1px solid rgba(220, 53, 69, 0.1);
+        }
+
+        .product-image-container {
+            position: relative;
+            height: 400px;
+            overflow: hidden;
+            border-radius: 10px;
+        }
+
+        .product-image-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            transition: transform 0.3s ease;
+        }
+
+        .product-details {
+            padding: 1.5rem;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+        }
+
+        .product-details h3 {
+            color: var(--primary-color);
+            font-weight: 600;
+        }
+
+        .product-info ul {
+            padding-left: 1.5rem;
+        }
+
+        .product-info li {
+            font-size: 0.95rem;
+            color: var(--text-color);
+        }
+
+        .modal-content {
+            border-radius: 15px;
+        }
+
+        .modal-header {
+            border-radius: 15px 15px 0 0 !important;
+        }
+
+        .gallery-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .gallery-image {
+            position: relative;
+            height: 200px;
+            overflow: hidden;
+            border-radius: 10px 10px 0 0;
+        }
+
+        .gallery-image img {
+            transition: transform 0.3s ease;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .gallery-card:hover img {
+            transform: scale(1.05);
+        }
+
+        .gallery-content {
+            padding: 1rem;
+        }
+
+        .gallery-content .card-title {
+            margin-bottom: 0.75rem;
+            color: var(--primary-color);
+            font-weight: 600;
+        }
+
+        .gallery-content .card-text {
+            margin-bottom: 1.5rem;
+            color: var(--text-color);
+            font-size: 0.95rem;
+        }
+
+        .gallery-card .card-title {
+            color: var(--primary-color);
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+
+        .gallery-card .card-text {
+            color: var(--text-color);
+            font-size: 0.9rem;
+            margin-bottom: 1rem;
+        }
+
+        .modal-content {
+            border-radius: 15px;
+        }
+
+        #modalImage {
+            border-radius: 10px;
+            margin-bottom: 1.5rem;
+        }
+
+        .loading-spinner {
+            display: none;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 1000;
+        }
+    </style>
+
+    <script>
+        // Initialize Masonry and filter functionality
+        document.addEventListener('DOMContentLoaded', () => {
+            // Initialize Masonry
+            const grid = new Masonry('.gallery-grid', {
+                itemSelector: '.gallery-card',
+                columnWidth: '.gallery-card',
+                gutter: 16,
+                percentPosition: true
+            });
+
+            // Add imagesLoaded to ensure all images are loaded before Masonry layout
+            const imgLoad = imagesLoaded('.gallery-grid');
+            imgLoad.on('progress', () => {
+                grid.layout();
+            });
+
+            // Filter functionality
+            document.querySelectorAll('.filters .btn').forEach(button => {
+                button.addEventListener('click', () => {
+                    const filterValue = button.dataset.filter;
+                    document.querySelectorAll('.filters .btn').forEach(btn => btn.classList.remove('active'));
+                    button.classList.add('active');
+                    
+                    // Show loading spinner
+                    document.querySelector('.gallery-loading').classList.remove('d-none');
+                    
+                    // Filter cards
+                    document.querySelectorAll('.gallery-card').forEach(card => {
+                        if (filterValue === 'all' || card.dataset.category === filterValue) {
+                            card.style.display = '';
+                        } else {
+                            card.style.display = 'none';
+                        }
+                    });
+
+                    // Layout Masonry after filtering
+                    setTimeout(() => {
+                        grid.layout();
+                        document.querySelector('.gallery-loading').classList.add('d-none');
+                    }, 300);
+                });
+            });
+        });
+
+        // Image modal functionality
+        const modal = document.getElementById('imageModal');
+        const modalImg = document.getElementById('modalImg');
+        const modalTitle = document.getElementById('modalTitle');
+        const modalDesc = document.getElementById('modalDesc');
+        const modalPrice = document.getElementById('modalPrice');
+        const modalBtn = document.getElementById('modalBtn');
+
+        document.querySelectorAll('.gallery-card').forEach(card => {
+            card.addEventListener('click', (e) => {
+                e.preventDefault();
+                
+                // Show loading spinner
+                const loading = document.createElement('div');
+                loading.className = 'text-center mb-3';
+                loading.innerHTML = '<div class="spinner-border text-primary" role="status"><span class="visually-hidden">Loading...</span></div>';
+                modal.querySelector('.modal-body').prepend(loading);
+                
+                // Fetch and update modal content
+                const imgSrc = card.querySelector('img').src;
+                const title = card.querySelector('.card-title').textContent;
+                const desc = card.querySelector('.card-text').textContent;
+                const price = card.querySelector('.price').textContent;
+
+                // Update modal content after delay for loading effect
+                setTimeout(() => {
+                    modalImg.src = imgSrc;
+                    modalTitle.textContent = title;
+                    modalDesc.textContent = desc;
+                    modalPrice.textContent = price;
+                    modalBtn.href = `#inquiry-${card.dataset.category}`;
+                    loading.remove();
+                    
+                    // Show modal
+                    modal.style.display = 'block';
+                }, 300);
+            });
+        });
+
+        // Close modal
+        document.getElementById('closeModal').addEventListener('click', () => {
+            modal.style.display = 'none';
+        });
+
+        // Close modal when clicking outside
+        window.addEventListener('click', (event) => {
+            if (event.target === modal) {
+                modal.style.display = 'none';
+            }
+        });
+
+        // Add smooth scroll to inquiry links
+        document.querySelectorAll('[href^="#inquiry"]').forEach(link => {
+            link.addEventListener('click', (e) => {
+                e.preventDefault();
+                const targetId = e.currentTarget.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    targetElement.scrollIntoView({ behavior: 'smooth' });
+                }
+            });
+        });
+
+        // Add lazy loading to images
+        document.querySelectorAll('.gallery-card img').forEach(img => {
+            if (!img.complete) {
+                img.classList.add('lazy');
+                img.addEventListener('load', () => {
+                    img.classList.remove('lazy');
+                });
+            }
+        });
+    </script>
+    <!-- Why Choose Us Section -->
+    <section id="why-choose" class="py-5 bg-light">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="display-4 fw-bold text-primary">Why Choose Kripansh Kavach</h2>
+                <p class="lead text-secondary">Discover what sets us apart</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body text-center">
+                            <div class="feature-icon mb-3">
+                                <i class="fas fa-shield-alt fa-3x text-primary"></i>
+                            </div>
+                            <h4 class="card-title">Made in India</h4>
+                            <p class="card-text">Proudly manufacturing premium defense equipment in India, supporting local industry and economy.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body text-center">
+                            <div class="feature-icon mb-3">
+                                <i class="fas fa-tools fa-3x text-primary"></i>
+                            </div>
+                            <h4 class="card-title">Precision Engineering</h4>
+                            <p class="card-text">State-of-the-art manufacturing facilities and skilled craftsmanship ensure the highest quality standards.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body text-center">
+                            <div class="feature-icon mb-3">
+                                <i class="fas fa-award fa-3x text-primary"></i>
+                            </div>
+                            <h4 class="card-title">Trusted Quality</h4>
+                            <p class="card-text">Trusted by Indian defense forces for reliability and performance in critical operations.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    </body>
+</html>
